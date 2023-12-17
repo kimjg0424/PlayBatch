@@ -1,13 +1,15 @@
 package com.example.springbatchtest;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.concurrent.atomic.AtomicInteger;
+
 public class codingtest {
-
-     public int solution(int[] num_list) {
+public int solution(int n) {
         int answer = 0;
-         for (int i=0; i< num_list.length;i++) {
-             if( num_list[i] <= 0) answer = i;
-         }
-
-         return answer;
-     }
+        if(n % 2 ==0) answer = 2;
+        else answer = 1;
+        return answer;
+    }
 }
